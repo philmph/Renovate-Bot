@@ -3,5 +3,5 @@
   "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
   "onboarding": true,
   "platform": "github",
-  "repositories": ["philmph/Renovate-Test"]
+  "repositories": ["philmph/GitHub-Repositories", "philmph/Renovate-Bot"]
 }
