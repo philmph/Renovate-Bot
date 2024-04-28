@@ -5,9 +5,15 @@ on:
     # Every day at 2:22 AM
     - cron: "22 2 * * *"
   workflow_dispatch:
-
-env:
-  renovate_version: "37.326.0"
+    inputs:
+      log_level:
+        description: "Renovate's 'LOG_LEVEL'"
+        required: true
+        default: "info"
+        type: choice
+        options:
+          - "debug"
+          - "info"
 
 jobs:
   renovate:
@@ -20,7 +26,7 @@ jobs:
         uses: renovatebot/github-action@v40.1.10
         with:
           configurationFile: renovate.json
-          renovate-version: ${{ env.renovate_version }}
+          renovate-version: "37.326.0"
           token: ${{ secrets.RENOVATE_TOKEN }}
         env:
-          LOG_LEVEL: "debug"
+          LOG_LEVEL: ${{  inputs.log_level }}
