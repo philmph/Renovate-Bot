@@ -1,7 +1,4 @@
 {
-  "branchPrefix": "renovate/",
-  "gitAuthor": "Renovate Bot <bot@renovateapp.com>",
-  "onboarding": true,
-  "platform": "github",
-  "repositories": ["philmph/GitHub-Repositories", "philmph/Renovate-Test"]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>philmph/renovate-bot//renovate-repo-config/default.json"]
 }
