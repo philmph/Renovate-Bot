@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "assignees": ["philmph"],
+  "enabled": true,
+  "labels": ["dependencies"],
+  "lockFileMaintenance": {
+    "enabled": false,
+    "recreateWhen": "always",
+    "rebaseStalePrs": true
+  },
+  "prHourlyLimit": 5,
+  "rangeStrategy": "update-lockfile",
+  "semanticCommits": "enabled"
+}
