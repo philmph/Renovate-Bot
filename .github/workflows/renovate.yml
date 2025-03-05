@@ -2,8 +2,8 @@ name: renovate
 
 on:
   schedule:
-    # Every day at 2,8,14,20:22
-    - cron: "22 2,8,14,20 * * *"
+    # Every Saturday at 2:22
+    - cron: "22 2 * * 6"
   workflow_dispatch:
     inputs:
       log_level:
