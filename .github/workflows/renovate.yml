@@ -5,8 +5,8 @@ env:
 
 on:
   schedule:
-    # Every Saturday at 2:22
-    - cron: "22 2 * * 6"
+    # Every Saturday at 2:20 and 4:20 (4:20 for automerge)
+    - cron: "20 2,4 * * 6"
   workflow_dispatch:
     inputs:
       log_level:
