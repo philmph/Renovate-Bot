@@ -6,7 +6,7 @@ env:
 on:
   schedule:
     # Every Saturday and Sunday at 2:20
-    - cron: "20 2 * * 6,7"
+    - cron: "20 2 * * 0,6"
   workflow_dispatch:
     inputs:
       log_level:
