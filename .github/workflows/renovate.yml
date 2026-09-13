@@ -3,6 +3,13 @@ name: renovate
 env:
   RENOVATE_VERSION: "44.83.0"
 
+permissions:
+  contents: read
+
+concurrency:
+  group: renovate
+  cancel-in-progress: false
+
 on:
   schedule:
     # Every Saturday at 2:20 and 4:20 (4:20 for automerge)
